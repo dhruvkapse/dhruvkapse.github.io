@@ -1,124 +1,114 @@
-/* General Reset */
-* {
+body {
+    font-family: 'Roboto', sans-serif;
     margin: 0;
     padding: 0;
-    box-sizing: border-box;
+    background-color: #f4f4f9;
+    color: #333;
 }
 
-/* Body and Font */
-body {
-    font-family: 'Inter', sans-serif;
-    background-color: #1e1e2f;
-    color: #ffffff;
-    line-height: 1.6;
-}
-
-/* Header */
 header {
-    background-color: #282838;
+    background-color: #4C5C68;
+    padding: 50px 0;
     text-align: center;
-    padding: 3rem 0;
+    color: white;
+}
+
+header .header-content {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 30px;
+}
+
+.profile-img-container {
+    display: inline-block;
+}
+
+.profile-img {
+    width: 150px;
+    height: 150px;
+    border-radius: 50%;
+    object-fit: cover;
+    border: 5px solid #ffffff;
+}
+
+.intro h1 {
+    font-size: 2.5em;
+    font-weight: bold;
+    margin: 0;
+}
+
+.intro p {
+    font-size: 1.2em;
+    margin-top: 10px;
     color: #ffffff;
 }
 
-header h1 {
-    font-size: 3rem;
-    font-weight: 600;
-    margin-bottom: 0.5rem;
-}
-
-header p {
-    font-size: 1.2rem;
-}
-
-/* Section Containers */
 .container {
-    width: 90%;
     max-width: 1200px;
     margin: 0 auto;
-    padding: 2rem 0;
+    padding: 20px;
 }
 
-/* About Section */
-#about {
-    background-color: #2f2f42;
-    padding: 3rem 0;
-    border-radius: 10px;
-}
-
-#about h2 {
-    text-align: center;
-    font-size: 2.5rem;
-    margin-bottom: 1rem;
-}
-
-#about p {
-    font-size: 1.1rem;
+h2 {
+    font-size: 2.5em;
+    margin-bottom: 20px;
+    color: #4C5C68;
     text-align: center;
 }
 
-/* Contact Section */
-#contact {
-    background-color: #383850;
-    padding: 2rem 0;
-    border-radius: 10px;
-}
-
-#contact h2 {
-    text-align: center;
-    font-size: 2.5rem;
-    margin-bottom: 1rem;
-}
-
-#contact p {
-    text-align: center;
-    font-size: 1.1rem;
-}
-
-/* Resume Section */
-#resume {
-    background-color: #2f2f42;
-    padding: 3rem 0;
-    border-radius: 10px;
-}
-
-#resume h2 {
-    text-align: center;
-    font-size: 2.5rem;
-    margin-bottom: 1rem;
-}
-
-#resume h3 {
-    font-size: 2rem;
-    margin-bottom: 1rem;
-    text-align: center;
-}
-
-#resume ul {
+ul {
     list-style-type: none;
-    padding: 0;
-    margin-bottom: 1.5rem;
+    padding-left: 0;
 }
 
-#resume ul li {
-    font-size: 1.1rem;
-    margin-bottom: 0.5rem;
+ul li {
+    font-size: 1.1em;
+    margin-bottom: 10px;
 }
 
-#resume a {
-    color: #f1f1f1;
+a {
+    color: #FF7F50;
     text-decoration: none;
 }
 
-#resume a:hover {
-    text-decoration: underline;
+a:hover {
+    color: #FF4500;
 }
 
-/* Projects Section */
-#projects {
-    background-color: #383850;
-    padding: 3rem 0;
-    border-radius: 10px;
+footer {
+    background-color: #4C5C68;
+    color: white;
+    text-align: center;
+    padding: 20px 0;
 }
 
-#projects h2 {
+footer p {
+    margin: 0;
+}
+
+#contact i, #projects i {
+    margin-right: 10px;
+    color: #4C5C68;
+    font-size: 1.3em;
+}
+
+#contact a, #projects a {
+    font-weight: bold;
+    color: #FF7F50;
+}
+
+#contact a:hover, #projects a:hover {
+    color: #FF4500;
+}
+
+#projects ul {
+    margin-top: 20px;
+}
+
+#projects li {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+    margin-bottom: 20px;
+}
